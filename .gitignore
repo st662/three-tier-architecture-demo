@@ -5,3 +5,5 @@ vendor/
 Gopkg.lock
 
 **/terraform/.terraform/*
+
+**/terraform/terraform.tf*
