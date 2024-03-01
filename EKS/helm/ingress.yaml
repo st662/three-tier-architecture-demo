@@ -9,7 +9,8 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
 spec:
   rules:
-    - http:
+    - host: app.sahil-devops.xyz 
+      http:
         paths:
           - path: /
             pathType: Prefix

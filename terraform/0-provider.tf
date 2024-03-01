@@ -22,9 +22,9 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "twschallenge-terraform"
-    key    = "terraform.tfstate"
+    bucket = "mar01-terraform-state"
+    key    = "global/s3/terraform.tfstate"
     region = "us-east-1"
+    dynamodb_table = "terraform-state"
   }
-  
 }
